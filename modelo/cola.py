@@ -39,5 +39,22 @@ class Cola:
         for elemento in otraCola._elementos:
             self.push(elemento)
 
+# MÉTODO ADICIONAL 1
+    def contiene(self, elemento):
+        for item in self._elementos:
+            if item == elemento:
+                return True
+
+        return False
+
+# MÉTODO ADICIONAL 2
+    def copiar(self):
+        nueva = Cola()
+
+        for elemento in self._elementos:
+            nueva.push(elemento)
+
+        return nueva
+
     def __str__(self):
         return f"Cola({self._elementos})"

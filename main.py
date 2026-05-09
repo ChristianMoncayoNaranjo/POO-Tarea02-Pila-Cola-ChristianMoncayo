@@ -61,3 +61,18 @@ print(f"Luego pushAll:    {cola}")
 invertida_cola = cola.reverse()
 
 print(f"Cola invertida:   {invertida_cola}")
+
+# NUEVAS FUNCIONALIDADES
+
+print("\n--- Métodos adicionales Cola ---")
+
+print(f"¿Contiene 'B'?:   {cola.contiene('B')}")
+print(f"¿Contiene 'Z'?:   {cola.contiene('Z')}")
+
+copia_cola = cola.copiar()
+
+print(f"Copia cola:       {copia_cola}")
+
+print(f"Pop copia:        {copia_cola.pop()}")
+print(f"Copia modificada: {copia_cola}")
+print(f"Cola original:    {cola}")
