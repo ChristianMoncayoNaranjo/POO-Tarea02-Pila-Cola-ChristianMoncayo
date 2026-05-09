@@ -1,0 +1,34 @@
+@startuml
+
+class Pila {
+    - _elementos : list
+    + __init__()
+    + push(elemento)
+    + pop()
+    + top()
+    + isEmpty()
+    + size()
+    + reverse()
+    + pushAll(otraPila)
+    + contiene(elemento)
+    + copiar()
+}
+
+class Cola {
+    - _elementos : list
+    + __init__()
+    + push(elemento)
+    + pop()
+    + top()
+    + isEmpty()
+    + size()
+    + reverse()
+    + pushAll(otraCola)
+    + contiene(elemento)
+    + copiar()
+}
+
+Pila ..> Pila : pushAll()
+Cola ..> Cola : pushAll()
+
+@enduml
